@@ -73,3 +73,17 @@ void DaGiac::Quay(float alpla) {
         this->dinh[i] = DiemSauKhiQuay;
     }
 }
+
+/**
+ * Tính diện tích đa giác sử dụng công thức Shoelace
+ * @return diện tích đa giác
+ */
+float DaGiac::TinhDienTich() {
+    float area = 0;
+    for (int i = 0; i < n - 1; i++) {
+        area += dinh[i].GetHoanhDo() * dinh[i + 1].GetTungDo() - dinh[i + 1].GetHoanhDo() * dinh[i].GetTungDo();
+    }
+    // Cộng thêm đỉnh cuối với đỉnh đầu
+    area += dinh[n - 1].GetHoanhDo() * dinh[0].GetTungDo() - dinh[0].GetHoanhDo() * dinh[n - 1].GetTungDo();
+    return std::abs(area) / 2;
+}

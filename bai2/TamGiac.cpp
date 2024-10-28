@@ -15,6 +15,15 @@ void TamGiac::Nhap() {
 }
 
 /**
+ * Constructor mặc định của class TamGiac.
+ */
+TamGiac::TamGiac() {
+    this->A = Diem();
+    this->B = Diem();
+    this->C = Diem();
+}
+
+/**
  * Constructor của class TamGiac.
  * @param A: Điểm A của tam giác
  * @param B: Điểm B của tam giác

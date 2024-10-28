@@ -9,6 +9,7 @@ class TamGiac {
     private:
         Diem A, B, C;
     public:
+        TamGiac();
         TamGiac(Diem, Diem, Diem);
         void Nhap();
         void Xuat();

@@ -13,4 +13,5 @@ class DaGiac {
         void PhongTo(float);
         void ThuNho(float);
         void Quay(float);
+        float TinhDienTich();
 };

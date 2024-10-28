@@ -4,6 +4,13 @@
 #define DEGR_FORWARD(axis, alpha, len, func) (axis + len * func(alpha * M_PI / 180))  
 using namespace std;
 
+/**
+ * Hàm main thực hiện các công việc sau:
+ * 1. Nhập vào tọa độ 3 điểm A, B, C của tam giác.
+ * 2. Nhập vào góc quay alpha và độ dài len.
+ * 3. Tính tịnh tiến tam giác theo góc alpha và độ dài len.
+ * 4. Xuất thông tin tọa độ 3 điểm của tam giác sau khi tịnh tiến.
+ */
 int main() {
     float x1, y1, x2, y2, x3, y3;
     cout << "Nhap toa do diem A, B, C cua tam giac: ";

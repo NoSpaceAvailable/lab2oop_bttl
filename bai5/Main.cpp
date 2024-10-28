@@ -4,6 +4,15 @@
 #define DEGR_FORWARD(axis, alpha, len, func) (axis + len * func(alpha * M_PI / 180))  
 using namespace std;
 
+/**
+ * Hàm main làm các công việc sau:
+ * - Nhập vào tọa độ của một điểm.
+ * - Nhập vào số lần thực hiện.
+ * - Mỗi lần thực hiện, chương trình sẽ in ra menu và thực hiện theo lựa chọn của người dùng.
+ * - Nếu lựa chọn không hợp lệ, chương trình sẽ in ra "Nope!".
+ * - Kết thúc mỗi lần thực hiện, chương trình sẽ in ra tọa độ của điểm sau khi thực hiện.
+ * - Kết thúc chương trình.
+ */
 int main() {
     float x, y;
     cout << "Nhap toa do diem: "; cin >> x >> y;
